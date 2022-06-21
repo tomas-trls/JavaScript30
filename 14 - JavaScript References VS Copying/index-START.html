@@ -13,7 +13,7 @@
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
     // and we want to make a copy of it.
-
+    const team = players;
     // You might think we can just do something like this:
 
     // however what happens when we update that array?
@@ -43,7 +43,8 @@
     };
 
     // and think we make a copy:
-
+    const captain = Object.assign({}, person, {name: 'John Doe', age: 50});
+    console.log(captain);
     // how do we take a copy instead?
 
     // We will hopefully soon see the object ...spread
